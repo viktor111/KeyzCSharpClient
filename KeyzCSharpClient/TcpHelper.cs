@@ -3,9 +3,9 @@ using System.Text;
 
 namespace KeyzCSharpClient;
 
-public class TcpHelper
+internal static class TcpHelper
 {
-    internal async Task WriteMessage(string message, NetworkStream stream)
+    internal static async Task WriteMessage(string message, NetworkStream stream)
     {
         var messageLen = message.Length;
         var messageLenBytes = IntToBeBytes(messageLen);
@@ -15,7 +15,7 @@ public class TcpHelper
         await stream.WriteAsync(messageBytes);
     }
     
-    internal async Task<string> ReadMessage(NetworkStream stream)
+    internal static async Task<string> ReadMessage(NetworkStream stream)
     {
         var messageBytesLen = new byte[4];
         var bytesReadMessageLen = await stream.ReadAsync(messageBytesLen);
@@ -28,7 +28,7 @@ public class TcpHelper
 
         var message = Encoding.UTF8.GetString(messageBytes);
 
-        return message;
+        return message.Replace("\0", string.Empty);
     }
     
     private static byte[] IntToBeBytes(int number)

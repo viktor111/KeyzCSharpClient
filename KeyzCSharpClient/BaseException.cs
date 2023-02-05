@@ -1,6 +1,12 @@
 namespace KeyzCSharpClient;
 
-public class BaseException
+internal abstract class BaseException : Exception
 {
-    
+    private string? error;
+
+    internal string Error
+    {
+        get => this.error ?? base.Message;
+        set => this.error = value;
+    }
 }

@@ -1,0 +1,12 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=8d1436b7_002D0ffd_002D46e3_002Dbef0_002Df1edb62abce5/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Should_Set_Value" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::6F940E41-4BA6-4D07-ABBB-629912C0D89B::net7.0::Tests.SendMessageSpec.Should_Set_Value&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=d550228f_002D0d12_002D4210_002D87fb_002Dfab32c90876d/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Should_Set_Value #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::6F940E41-4BA6-4D07-ABBB-629912C0D89B::net7.0::Tests.SendMessageSpec.Should_Set_Value&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::6F940E41-4BA6-4D07-ABBB-629912C0D89B::net7.0::Tests.SendMessageSpec.Should_Set_Value_Expire_4_Seconds&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
