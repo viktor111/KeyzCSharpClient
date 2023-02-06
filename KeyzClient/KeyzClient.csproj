@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Nullable>enable</Nullable>
+    <Title>KeyzClient</Title>
+    <Description>Client for keyz key value store</Description>
+    <PackageProjectUrl>https://github.com/viktor111/keyz_csharp_client</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/viktor111/keyz_csharp_client</RepositoryUrl>
+    <PackageTags>database;client;key;value;store;</PackageTags>
+  </PropertyGroup>
+
+</Project>

@@ -4,6 +4,12 @@
         <TargetFramework>net7.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <Title>KeyzClient</Title>
+        <Description>Client for Keyz key value store</Description>
+        <Copyright>MIT</Copyright>
+        <PackageProjectUrl>https://github.com/viktor111/keyz_csharp_client</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/viktor111/keyz_csharp_client</RepositoryUrl>
+        <PackageTags>database;key;value;</PackageTags>
     </PropertyGroup>
 
 </Project>

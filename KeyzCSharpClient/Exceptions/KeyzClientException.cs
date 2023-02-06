@@ -1,6 +1,6 @@
-namespace KeyzCSharpClient;
+namespace KeyzCSharpClient.Exceptions;
 
-internal class KeyzClientException : BaseException
+public class KeyzClientException : BaseException
 {
     public KeyzClientException()
     {

@@ -22,7 +22,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\KeyzCSharpClient\KeyzCSharpClient.csproj" />
+      <ProjectReference Include="..\KeyzClient\KeyzClient.csproj" />
     </ItemGroup>
 
 </Project>

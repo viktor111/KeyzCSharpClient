@@ -1,5 +1,5 @@
 using System.Net.Sockets;
-using KeyzCSharpClient;
+using KeyzClient;
 
 namespace Tests;
 
@@ -12,13 +12,14 @@ public class SendMessageSpec
     public async Task Should_Set_Value()
     {
         // Arrange
-        using var keyz = new KeyzClient(new TcpClient());
+        using var keyz = new Keyz(new TcpClient());
         var connection = keyz.Connect(IP, PORT);
+        var key = "user:1";
         var value = "testUserSet";
         
         // Act
-        await connection.SendMessage($"SET user:1 {value}");
-        var result = await connection.SendMessage("GET user:1");
+        await connection.SendMessage($"SET {key} {value}");
+        var result = await connection.SendMessage($"GET {key}");
 
         // Assert
         Assert.Equal(result, value);
@@ -28,16 +29,17 @@ public class SendMessageSpec
     public async Task Should_Set_Value_Expire_4_Seconds()
     {
         // Arrange
-        using var keyz = new KeyzClient(new TcpClient());
+        using var keyz = new Keyz(new TcpClient());
         var connection = keyz.Connect(IP, PORT);
+        var key = "user:1";
         var value = "testUserSet";
         
         // Act
-        await connection.SendMessage($"SET user:1 {value} EX 4");
+        await connection.SendMessage($"SET {key} {value} EX 4");
         Thread.Sleep(5000);
-        var result = await connection.SendMessage("GET user:1");
+        var result = await connection.SendMessage($"GET {key}");
 
         // Assert
-        Assert.Equal(result, null);
+        Assert.Null(result);
     }
 }
