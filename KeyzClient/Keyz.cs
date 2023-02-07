@@ -8,10 +8,13 @@ namespace KeyzClient
     public class Keyz : IKeyz, IDisposable
     {
         private TcpClient _tcpClient;
-
-        public Keyz(TcpClient tcpClient)
+        
+        public Keyz(string ip, int port)
         {
-            _tcpClient = tcpClient;
+            ValidateIp(ip);
+            ValidatePort(port);
+
+            _tcpClient = new TcpClient(ip, port);
         }
 
         public IKeyz Connect(string ip, int port)
